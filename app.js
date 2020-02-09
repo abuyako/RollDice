@@ -3,7 +3,7 @@ var scores, roundScore, activePlayer, gamePlaying;
 init();
 
 document.querySelector('.btn-roll').addEventListener('click', function () {
-    function (gamePlaying) {
+    if (gamePlaying) {
 
         // random number
         var dice = Math.floor(Math.random() * 6) + 1;
